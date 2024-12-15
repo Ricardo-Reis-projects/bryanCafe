@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    .custom-class {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-class {
+      font-size: 18px;
+    }
+  }
+  

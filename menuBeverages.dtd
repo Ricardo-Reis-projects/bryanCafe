@@ -1,0 +1,5 @@
+<!ELEMENT menuBeverages (item+)>
+<!ELEMENT item (size, price, description)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

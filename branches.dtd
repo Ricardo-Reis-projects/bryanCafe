@@ -1,0 +1,6 @@
+<!ELEMENT branches (item+)>
+<!ELEMENT item (image, address, contact, hours)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT hours (#PCDATA)>
