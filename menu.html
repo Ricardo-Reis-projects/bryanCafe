@@ -20,7 +20,7 @@
 
       try {
         // Fetch the XML file
-        const response = await fetch('menuMeal.xml');
+        const response = await fetch('menu.xml');
 
         // Ensure the response is successful
         if (!response.ok) {
@@ -35,7 +35,7 @@
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
 
         // Access the XML data
-        const items = xmlDoc.getElementsByTagName('item');
+        const items = xmlDoc.getElementsByTagName('meal');
 
         // Display the data in HTML
         let output = '<div class="row">';
@@ -73,7 +73,7 @@
 
       try {
         // Fetch the XML file
-        const response = await fetch('menuBeverages.xml');
+        const response = await fetch('menu.xml');
 
         // Ensure the response is successful
         if (!response.ok) {
@@ -88,7 +88,7 @@
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
 
         // Access the XML data
-        const items = xmlDoc.getElementsByTagName('item');
+        const items = xmlDoc.getElementsByTagName('beverages');
 
         // Display the data in HTML
         let output = '<div class="row ">';
@@ -124,7 +124,7 @@
 
       try {
         // Fetch the XML file
-        const response = await fetch('menuOthers.xml');
+        const response = await fetch('menu.xml');
 
         // Ensure the response is successful
         if (!response.ok) {
@@ -139,7 +139,7 @@
         const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
 
         // Access the XML data
-        const items = xmlDoc.getElementsByTagName('item');
+        const items = xmlDoc.getElementsByTagName('others');
 
         // Display the data in HTML
         let output = '<div class="row ">';
